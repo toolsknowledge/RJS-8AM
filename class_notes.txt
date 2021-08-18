@@ -1,0 +1,280 @@
+Day-1
+*****
+Duration : 2 months
+
+Hour : 1hr
+
+1) Introduction to ReactJS
+
+	- what is ReactJS
+
+	- Advantages of ReactJS
+
+	- Disadvantages of ReactJS
+
+	- Angular / React / VueJS
+
+	- Virtual DOM
+
+
+
+2) Installation of ReactJS
+
+
+3) Components in ReactJS
+
+	=> Functional Components
+
+	=> Class Components
+
+
+
+4) Communication Between Components
+
+	=> parent component to child component
+
+	=> child component to parent component
+
+
+
+5) state & props
+
+
+6) Life Cycle Hooks
+
+	useState()
+
+	useEffect()
+
+	useRef()
+
+	---
+	---
+	---
+	---
+
+
+7) Asynchronous Calls
+
+	- GET, POST, PUT, DELETE,.........
+
+	- axios
+
+
+
+8) MERN Stack Development
+
+
+	M - MongoDB
+
+	E - ExpressJS
+
+	R - ReactJS
+
+	N - NodeJS
+
+
+
+9) Single Page Applications
+
+	- Routing
+
+
+
+
+10) Middlewares in ReactJS
+
+	- Redux
+
+	- Thunk
+
+	- Saga
+
+
+
+11) Forms with Validations
+
+
+
+12) Context API
+
+
+13) Charts in ReactJS
+
+
+14) Debugging the ReactJS Applications
+
+
+15) Project
+
+
+16) Cloud Deployment
+
+	=> AWS Deployment
+
+	=> CI / CD Process
+
+		Continuos Integration and Continuos Deployment
+
+
+
+17) Unit Test Cases
+
+
+Day - 2
+*******
+
+Introduction to JavaScript
+
+    - JavaScript is the Scripting Language.
+
+    - JavaScript Released by Netscape.
+
+    - Current Version of JavaScript is ES12.
+
+    - ES Stands for ECMA Script.
+
+    - we will save the JavaScript files with ".js" extension.
+
+    - we will include the JavaScript to the webpages by using <script> tag.
+
+    - JavaScript Execution is Synchronous Execution.
+
+    - JavaScript is the Object Based Scripting Language.
+
+            Ex.
+                window
+                document
+                console
+                ---
+                ---
+                ---
+    - Visual Studio Code is the Suggestable IDE, to build the JavaScript.
+
+    - Visual Studio Code also called as VSCode.
+
+    - VSCode IDE is the Open Source IDE and Provided by Microsoft.
+
+    - we will execute JavaScript in two ways.
+
+            1) intrepreter
+
+            2) node tool
+
+    - intrepreter present in browser engine.
+
+    - node tool present in NodeJS.
+
+    - we will use JavaScript to build both client side Applications as well as server side Applications also
+
+    Ex  
+        Angular
+        React
+        VueJS
+
+        NodeJS
+
+Software Installation
+*********************
+1) download and install "NodeJS"
+
+website : https://nodejs.org/en/download/
+
+file    : node-v14.17.5-x64.msi
+
+
+
+2) download and install "Visual Studio Code"
+
+    website : https://code.visualstudio.com/download
+
+    file    : VSCodeUserSetup-x64-1.59.0.exe
+
+
+Execute the JavaScript
+**********************
+    Ex.
+        demo.js
+
+    > node demo.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
