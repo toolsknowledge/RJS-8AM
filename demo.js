@@ -172,6 +172,125 @@ var abc$123_;
 
 
 
+/*
+    for(let i=0;i<5;i++){
+
+    }
+    console.log( i );
+    //var : 5
+    //let : ReferenceError: i is not defined
+
+    //var keyword breaks the scope rule
+    //let keyword obeys the scope rule
+*/
+
+
+let data = 1000;
+{
+    let data = 2000;
+}
+console.log( data );            //var : 2000
+                                //let : 1000
+//if global members effected because of block of code called as global polluting issue
+//global polluting issue raised because of var keyword
+//we can overcome global polluting issue by using let keyword
+
+
+/*
+    let data1 = 100;
+    let data1 = 200;
+    console.log( data1 );           //var : 200
+                                    //let : SyntaxError: Identifier 'data1' has already been declared
+
+    //var keyword allows the duplicate variables
+    //let keyword won't allows the duplicate variables
+*/
+
+
+
+console.log( data2 );           //var:undefined
+                                //let:ReferenceError: Cannot access 'data2' before initialization
+let data2 = 100;
+//var keyword raises the variable hoisting
+//we can overcome variable hoisting with the let keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
