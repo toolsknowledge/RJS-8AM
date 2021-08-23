@@ -208,11 +208,131 @@ console.log( data );            //var : 2000
 
 
 
-console.log( data2 );           //var:undefined
-                                //let:ReferenceError: Cannot access 'data2' before initialization
-let data2 = 100;
-//var keyword raises the variable hoisting
-//we can overcome variable hoisting with the let keyword
+/*
+    console.log( data2 );           //var:undefined
+                                    //let:ReferenceError: Cannot access 'data2' before initialization
+    let data2 = 100;
+    //var keyword raises the variable hoisting
+    //we can overcome variable hoisting with the let keyword
+*/
+
+
+
+//const
+//ES6
+//declare the variables
+//reinitilization not possible
+const var_one = "ReactJS";
+//var_one = "Not Possible";           //TypeError: Assignment to constant variable.
+
+
+
+const arr_one = [10,20,30,40,50];
+arr_one[0] = 100;
+arr_one[4] = 500;
+console.log( arr_one );                 //[ 100, 20, 30, 40, 500 ]
+//arr_one = [];                           //TypeError: Assignment to constant variable.
+
+
+
+const json_obj = {
+    key1 : "Hello_1",
+    key2 : "Hello_2",
+    key3 : "Hello_3" 
+};
+json_obj.key1 = "ReactJS";
+json_obj.key2 = "NodeJS";
+json_obj.key3 = "MongoDB";
+console.log( json_obj );
+//{ key1: 'ReactJS', key2: 'NodeJS', key3: 'MongoDB' }
+
+
+
+//json_obj = {};
+//TypeError: Assignment to constant variable.
+
+
+
+/*
+    functions
+    *********
+        - business logic
+        
+        - reuse
+
+        - function
+
+
+        syntax
+        ******
+        1) function definition
+
+        2) function calling
+
+
+        function definition
+        *******************
+        function functionname(arg1,arg2,arg3,......argn){
+            business logic
+        }
+
+        function calling
+        ****************
+        functionname( param1,param2,param3,......param n );
+
+
+*/
+
+function fun_one(){
+    return "Hello";
+};
+console.log( fun_one() );
+//Hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
