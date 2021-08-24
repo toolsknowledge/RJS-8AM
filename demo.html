@@ -52,27 +52,192 @@
 </script>
 -->
 
+
+<!--
 <script>
-     //anonymous function
-     //arrow functions
-     //ES6
-     //()=>{}
+    //the function without name called as anonymous function.
+    //arrow functions
+    //()=>{}
+    //ES6
+    /*  
+        syntax
+        ******
+        1) function definition
 
+        2) function calling
 
-     //Syntax:
-     //function definition
-     //function calling
-
-     /*
+        function definition
+        *******************
         let variablename = (arg1,arg2,arg3,.....arg n)=>{
-            business logic
+                business logic
         }
 
-        variablename(param1,param2,param3,param4,....param n);
-     */
+        function calling
+        ****************
+        variablename( param1,param2,param3,....param n);
+    */
 
+    //let fun_one = ()=> console.log("Hello");
+
+    //fun_one();                  //Hello
+</script>
+-->
+
+
+<!--
+<script>
+   let fun_one = ()=>{
+        return "Hello";
+   };
+
+   console.log( fun_one );          //def
+</script>
+-->
+
+
+<!--
+<script>
+    let fun_one = ()=>{
+        return ()=>{
+            return "Hello";
+        }
+    };
+    console.log( fun_one()() );             //Hello
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = (arg1,arg2,arg3)=>{
+        console.log( arg1, arg2, arg3 );
+    };
+    fun_one("ReactJS","NodeJS","MongoDB");              //ReactJS NodeJS MongoDB
+    fun_one("Angular12");                               //Angular12 undefined undefined
+    fun_one(undefined,"NodeJS");                        //undefined "NodeJS" undefined
+    fun_one(undefined,undefined,undefined);             //undefined undefined undefined
+    fun_one(null,null,null);                            //null null null
+</script>
+-->
+
+<!--
+<script>
+    let fun_one = ()=>{
+        console.log("Hello");
+    };
+    
+    let arr = [];
+
+    for(let i=0;i<5;i++){
+        arr.push( fun_one );
+    }
 
 </script>
+-->
+
+
+
+<!--
+<script>
+    let fun_one = (...arg1)=>{
+        console.log( arg1 );
+    };
+    fun_one("Hello_1");                         //["Hello_1"]
+    fun_one("Hello_1","Hello_2");               //["Hello_1", "Hello_2"]
+    fun_one();                                  //[]
+    fun_one(undefined);                         //[undefined]
+    fun_one(undefined,null);                    //[undefined, null]
+</script>
+-->
+
+<!--
+<script>
+    let arr = [20,30,40];
+    arr.push(50);
+    console.log( arr );                         //[20, 30, 40, 50]
+
+    let arr1 = [...arr];
+    console.log( arr );                         //[20, 30, 40, 50]
+    console.log( arr1 );                        //[20, 30, 40, 50]
+</script>
+-->
+
+
+
+<script>
+    let fun_one = (arg1="Hello_1",
+                   arg2="Hello_2",
+                   arg3="Hello_3")=>{
+        console.log( arg1, arg2, arg3 );
+    };
+    fun_one();                                      //Hello_1 Hello_2 Hello_3
+    fun_one(undefined,undefined,undefined);         //Hello_1 Hello_2 Hello_3
+    fun_one(null,null,null);                        //null null null
+    fun_one("ReactJS");                             //ReactJS Hello_2 Hello_3
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
