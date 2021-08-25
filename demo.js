@@ -290,6 +290,140 @@ console.log( fun_one() );
 //Hello
 
 
+//array
+//collection of hetrogeneous elements called as array
+//[]
+//we will access array elements with the help of indexes
+//index starts from "0"
+let arr1 = [10,20,30,40,50];
+console.log( arr1 );                        //[ 10, 20, 30, 40, 50 ]
+console.log( arr1[0],arr1[2],arr1[4] );     //10 30 50
+console.log( arr1[-1],arr1[5] );            //undefined undefined
+console.log( arr1.length );                 //5
+
+arr1.length = 3;
+console.log( arr1[0], arr1[2], arr1[3], arr1[4], arr1[5], arr1[-1]);
+//10 30 undefined undefined undefined undefined
+
+
+let arr2 = [20,30,40];
+console.log( arr2 );                    //[ 20, 30, 40 ]
+arr2.push(50);
+console.log( arr2 );                    //[ 20, 30, 40, 50 ]
+arr2.unshift(10);
+console.log( arr2 );                    //[ 10, 20, 30, 40, 50 ]
+arr2.pop();
+console.log( arr2 );                    //[ 10, 20, 30, 40 ]
+arr2.shift();
+console.log( arr2 );                    //[ 20, 30, 40 ]
+
+
+let arr3 = [10,20,30,40,50,60,70,80,90,100];
+arr3.splice(5,3);
+console.log( arr3 );                    //[10,20,30,40,50,90,100]
+arr3.splice(5,1);
+console.log( arr3 );                    //[ 10, 20, 30, 40, 50, 100 ]
+arr3.splice(1,1);
+console.log( arr3 );                    //[ 10, 30, 40, 50, 100 ]
+arr3.splice(2,1);
+console.log( arr3 );                    //[ 10, 30, 50, 100 ]
+arr3.splice(3,0,60,70,80,90);
+console.log( arr3 );                    //[10,30,50,60,70,80,90,100]
+arr3.splice(2,1,40,50);
+console.log( arr3 );                    //[10,30,40,50,60,70,80,90,100]
+arr3.splice(1,0,20);
+console.log( arr3 );                    //[10,20,30,40,50,60,70,80,90,100]
+
+
+//findIndex()
+let arr4 = [100,200,300,400,500];
+console.log( arr4 );                    //[ 100, 200, 300, 400, 500 ]
+console.log(
+    arr4.findIndex((element,index)=>{
+        return element === 100;
+    })
+);                                      //0
+
+console.log(
+    arr4.findIndex((element,index)=>{
+        return element === 300;
+    })
+);                                      //2
+
+
+console.log(
+    arr4.findIndex((element,index)=>{
+        return element === 500;
+    })
+);                                      //4
+
+
+console.log(
+    arr4.findIndex((element,index)=>{
+        return element === 600;
+    })
+);                                      //-1
+
+
+arr4.splice(arr4.findIndex((element,index)=>{
+    return element === 200;
+}),1);
+console.log( arr4 );                //[ 100, 300, 400, 500 ]
+
+
+arr4.splice(arr4.findIndex((element,index)=>{
+    return element === 400;
+}),1);
+console.log( arr4 );                //[ 100, 300, 500 ]
+
+
+arr4.splice(arr4.findIndex((element,index)=>{
+    return element === 100;
+}),1)
+console.log( arr4 );            //[ 300, 500 ]
+
+
+let arr5 = [10,20,30];
+let arr6 = [40,50,60];
+let arr7 = [...arr5,...arr6];
+console.log( arr7 );            //[ 10, 20, 30, 40, 50, 60 ]
+
+
+let str1 = "Hello";
+console.log( Array.from(str1).reverse().join("") );
+
+//[ 'H', 'e', 'l', 'l', 'o' ]
+//[ 'o', 'l', 'l', 'e', 'H' ]   
+//olleH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
