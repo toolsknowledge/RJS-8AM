@@ -397,6 +397,93 @@ console.log( Array.from(str1).reverse().join("") );
 //olleH
 
 
+//json
+//java script object notation
+//javascript objects
+//transfer the data over the network
+//json is light weight
+//objects ---- {}
+//arrays  ---- []
+//data    ---- key & value pairs
+//key & value separated by using ":"
+//key & value pairs separated by using ","
+let obj = {
+    "sub_one" : "ReactJS",
+    "sub_two" : "NodeJS",
+    "sub_three" : "MongoDB"
+};
+console.log(
+    obj.sub_one,
+    obj.sub_two,
+    obj.sub_three
+);                          //ReactJS NodeJS MongoDB
+
+
+
+let obj2 = {
+    "frontend":{
+        "sub":"ReactJS"
+    },
+    "backend":{
+        "sub" : "NodeJS"
+    },
+    "database":{
+        "sub":"MongoDB"
+    }
+}
+console.log(
+    obj2.frontend.sub,
+    obj2.backend.sub,
+    obj2.database.sub
+);              //ReactJS NodeJS MongoDB
+
+
+let obj3 = {
+    "sub_one" : "ReactJS",
+    "sub_two" : "NodeJS",
+    "sub_three" : "MongoDB"
+};
+for(let key in obj3){
+    console.log( obj3[key] );
+}              //ReactJS NodeJS MongoDB
+
+
+let obj4 = {"sub_one":"ReactJS"};
+let obj5 = {"sub_two":"NodeJS"};
+let obj6 = {"sub_three":"MongoDB"};
+let obj7 = {...obj4,...obj5,...obj6};
+console.log(obj7);
+//{ sub_one: 'ReactJS', sub_two: 'NodeJS', sub_three: 'MongoDB' }
+
+
+//deep cloning
+//immutability
+let obj8 = {"key1":"Hello_1"};
+let obj9 = {...obj8};
+obj8.key2 = "Hello_2";
+obj9.key3 = "Hello_3";
+console.log( obj8 );            //{ key1: 'Hello_1', key2: 'Hello_2' }
+console.log( obj9 );            //{ key1: 'Hello_1', key3: 'Hello_3' }
+
+
+
+let obj10 = {
+    "key1":"Hello_1",
+    "key2":"Hello_2",
+    "key3":"Hello_3"
+};
+delete obj10.key1;
+delete obj10.key3;
+console.log( obj10 );               //{ key2: 'Hello_2' }
+
+
+
+
+
+
+
+
+
 
 
 
