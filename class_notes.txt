@@ -229,7 +229,19 @@ Execute the JavaScript
 
 
 
+Promises
+********
+    - proper communication between "producer" and "consumer" called as promises.
 
+    - promises also called as special JavaScript "objects".
+
+    - producer "creates" the "promises".
+
+    - consumer "consumes" the "promises".
+
+    - producer creates the promises with "Promise" class.
+
+    - consumer consumes the promises with either "then()" or "async & await" keywords.
 
 
 

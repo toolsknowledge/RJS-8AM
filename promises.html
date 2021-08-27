@@ -1,0 +1,212 @@
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        resolve("welcome to promises");
+    });
+
+    promise1.then((posRes)=>{
+        console.log( posRes );                  //welcome to promises
+    },(errRes)=>{
+        console.log( errRes );
+    })
+</script>
+-->
+
+
+
+
+
+
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello");
+        },5000);
+    });
+    promise1.then((posRes)=>{
+        console.log( posRes );                  //Hello
+    },(errRes)=>{
+        console.log( errRes );
+    })
+</script>
+-->
+
+
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_1");
+        },0);
+    });
+
+    let promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_2");
+        },5000);
+    });
+
+    let promise3 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_3");
+        },10000);
+    });
+
+    // promise1.then((posRes)=>{
+    //     console.log( posRes );
+    // },(errRes)=>{
+    //     console.log( errRes );
+    // });
+
+    // promise2.then((posRes)=>{
+    //     console.log( posRes );
+    // },(errRes)=>{
+    //     console.log( errRes );
+    // });
+
+    // promise3.then((posRes)=>{
+    //     console.log( posRes );
+    // },(errRes)=>{
+    //     console.log( errRes );
+    // });
+
+    Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+        console.log( posRes );
+    },(errRes)=>{
+        console.log( errRes );
+    });
+</script>
+-->
+
+
+<!--
+<script>
+     let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_1");
+        },0);
+    });
+
+    let promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_2");
+        },5000);
+    });
+
+    let promise3 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("Error");
+        },10000);
+    });
+
+    Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+        console.log( posRes );
+    },(errRes)=>{
+        console.log( errRes );
+    });         //Error
+</script>
+-->
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_1");
+        },0);
+    });
+
+    let promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_2");
+        },5000);
+    });
+
+    let promise3 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("Error");
+        },10000);
+    });
+
+    Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
+        console.log(posRes);
+    },(errRes)=>{
+        console.log( errRes );
+    });
+</script>
+-->
+
+
+<!--
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_1");
+        },0);
+    });
+
+    let promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Hello_2");
+        },5000);
+    });
+
+    let promise3 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            reject("Error");
+        },10000);
+    });
+
+    
+    Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+        console.log(posRes);
+    },(errRes)=>{
+        console.log(errRes);
+    });
+</script>
+-->
+
+<script>
+    let promise1 = new Promise((resolve,reject)=>{
+        resolve("Hello");
+    });
+
+    async function myFun(){
+        let res = await promise1;
+        console.log( res );
+    };
+
+    myFun();                        //Hello
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
