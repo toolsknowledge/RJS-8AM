@@ -245,6 +245,17 @@ Promises
 
 
 
+=> slice & splice
+
+=> delete
+
+=> rest parameter & spread operator
+
+=> prototype
+
+
+
+
 
 
 
