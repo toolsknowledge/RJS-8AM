@@ -1,0 +1,30 @@
+<!--
+    //HTML5
+    //storages
+    //1) local storage
+    //2) session storage
+    //when ever we close the browser, we won't lost the data called as local storage
+    //when ever we close the browser, we will lost the data called as session storage
+-->
+
+<!--
+<script>
+    window.localStorage.setItem("login_details",
+        JSON.stringify({"uname":"admin","upwd":"admin"}));
+
+    let str = window.localStorage.getItem("login_details");
+    let obj = JSON.parse(str);
+    console.log( obj.uname, obj.upwd );
+
+    window.localStorage.removeItem("login_details");
+
+</script>
+-->
+
+<script>
+    window.sessionStorage.setItem("test key","test data");
+    console.log( window.sessionStorage.getItem("test key") );       //test data
+    window.sessionStorage.removeItem("test key");
+</script>
+
+
