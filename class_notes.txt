@@ -1,0 +1,29 @@
+Transpilation
+*************
+    converting "typescript" to equalent "javascript" called as "Transpilation"
+
+    we will perform Transpilation with "tsc" tool.
+
+    "tsc" stands for "typescript compiler".
+
+
+    > tsc demo.ts
+
+        o/p
+
+    demo.js
+
+
+    > node demo.js
+
+
+
+
+
+
+
+
+
+
+
+
