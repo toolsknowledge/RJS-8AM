@@ -94,24 +94,131 @@
 */
 
 
+/*
+    class class_one{
+        fun_one():string{
+            return "Hello_1";
+        }
+    }
+    class class_two extends class_one{
+        fun_two():string{
+            return "Hello_2";
+        }
+    }
+    class class_three extends class_two{
+        fun_three():string{
+            return "Hello_3";
+        }
+    }
+    let obj:class_three = new class_three();
+    console.log(
+        obj.fun_one(),
+        obj.fun_two(),
+        obj.fun_three()
+    );      //Hello_1 Hello_2 Hello_3
+*/
+
+
+
+
+/*
+    class class_one{
+        public var_one:string;
+        constructor(arg1:string){
+            this.var_one = arg1;
+        }
+    }
+    class class_two extends class_one{
+        public var_two:string;
+        constructor(arg1:string,arg2:string){
+            super(arg1);
+            this.var_two = arg2;
+        }
+    }
+    let obj:class_two = new class_two("Hello_1","Hello_2");
+    console.log( obj.var_one, obj.var_two );
+*/
+
+/*
+    class class_one{
+        static var_one:string = "Hello";
+        static fun_one():string{
+            return "Welcome";
+        }
+    }
+    console.log(
+        class_one.var_one,
+        class_one.fun_one()
+    );
+*/
+
+
+/*
+    class class_one{
+        private constructor(){}
+        static fun_one():any{
+            return new class_one();
+        }
+        fun_two():any{
+            return "Hello";
+        }
+    }
+    console.log( class_one.fun_one().fun_two() );
+*/
+
+
 class class_one{
-    fun_one():string{
-        return "Hello_1";
-    }
+    readonly var_one:string = "Hello";
 }
-class class_two extends class_one{
-    fun_two():string{
-        return "Hello_2";
-    }
-}
-class class_three extends class_two{
-    fun_three():string{
-        return "Hello_3";
-    }
-}
-let obj:class_three = new class_three();
-console.log(
-    obj.fun_one(),
-    obj.fun_two(),
-    obj.fun_three()
-);      //Hello_1 Hello_2 Hello_3
+let obj:class_one = new class_one();
+console.log( obj.var_one );
+obj.var_one = "Welcome";
+//Cannot assign to 'var_one' because it is a read-only property.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
