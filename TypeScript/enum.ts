@@ -110,11 +110,102 @@
     );          //Hello_1 100 Hello_2 200
 */
 
-let var_one:string | number | boolean;
-var_one = "Hello";
-var_one = 100;
-var_one = true;
-console.log( var_one );         //true
+
+/*
+    let var_one:string | number | boolean;
+    var_one = "Hello";
+    var_one = 100;
+    var_one = true;
+    console.log( var_one );         //true
+*/
+
+type var1 = string;
+let msg1:var1 = "welcome to type keyword in typescript";
+console.log( msg1 );            //welcome to type keyword in typescript
+
+
+type var2 = string | number | boolean;
+let msg2:var2 = "Hello";
+console.log( msg2 );
+msg2 = 1000;
+console.log( msg2 );
+msg2 = true;
+console.log(msg2);
+
+
+enum Enum1{
+    CONST1,
+    CONST2,
+    CONST3,
+    CONST4
+}
+type x = Enum1;
+let v1:x = 100;
+console.log( v1 );
+
+
+/*
+    function fun_one(msg:string):never{
+        throw new Error(msg);
+    }
+    fun_one("Hello");
+*/
+
+
+function fun_two():never{
+    while(true){
+        console.log("Hello");
+    }
+}
+fun_two();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

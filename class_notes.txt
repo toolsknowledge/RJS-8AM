@@ -19,6 +19,38 @@ Transpilation
 
 
 
+=> string
+
+=> number
+
+=> boolean
+
+=> undefined
+
+=> null
+
+=> bigint
+
+=> Symbol
+
+=> any
+
+
+---------------------------------
+
+
+this
+
+static
+
+super
+
+
+------------------------------------
+
+typeof
+
+
 
 
 
